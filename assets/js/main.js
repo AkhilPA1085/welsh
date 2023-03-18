@@ -26,7 +26,7 @@ $(document).ready(function(){
         },
         1024: {
           slidesPerView: 7,
-          spaceBetween: 5,
+          spaceBetween: 10,
         },
       },
     });

@@ -374,7 +374,7 @@ nav .navbar-nav .nav-item a{
     text-transform: capitalize;
 }
 
-.news .left-img-container{
+/* .news .left-img-container{
     position: relative;
     height: 500px;
     width: 100%;
@@ -384,7 +384,7 @@ nav .navbar-nav .nav-item a{
     position: absolute;
     height: 100%;
     width: 100%;
-}
+} */
 
 .news .news-date{
     display: flex;
@@ -695,5 +695,3 @@ nav .navbar-nav .nav-item a{
     height: 100%;
     border-radius: 10px;
 }
-
-
