@@ -1,4 +1,13 @@
 $(document).ready(function(){
+    $(window).scroll(function(){
+      var scroll = $(window).scrollTop()
+      if(scroll > 50){
+        $('.navbar').addClass('nav-scrolled');
+      }else{
+        $('nav').removeClass('nav-scrolled')
+      }
+    })
+
     var swiper = new Swiper(".bannerSwiper", {
         spaceBetween: 30,
         effect: "fade",
@@ -10,11 +19,11 @@ $(document).ready(function(){
 
 
     var swiper = new Swiper(".sponsorsSwiper", {
-      loop: true,
       autoplay: {
         delay: 2500,
         disableOnInteraction: false,
       },
+      loop: true,
       breakpoints: {
         640: {
           slidesPerView: 2,
@@ -25,7 +34,7 @@ $(document).ready(function(){
           spaceBetween: 5,
         },
         1024: {
-          slidesPerView: 7,
+          slidesPerView: 4.5,
           spaceBetween: 10,
         },
       },
@@ -33,12 +42,24 @@ $(document).ready(function(){
 
 
     var swiper = new Swiper(".gallerySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 0,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
       loop: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 0,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 0,
+        },
       },
   });
 
