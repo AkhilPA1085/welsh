@@ -203,6 +203,7 @@ ul li:hover>.drop-down-list{
     bottom: 10px;
     text-align: initial;
     color: #fff;
+    padding-bottom: 10px;
 }
 
 .banner .swiper-pagination{
@@ -218,6 +219,9 @@ ul li:hover>.drop-down-list{
     border: 2px solid var(--main-red);
 }
 
+.banner .section-sub-title{
+    color: #fff;
+}
 
 @media(max-width:576px){
     .banner .swiper-pagination{

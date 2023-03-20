@@ -9,6 +9,10 @@ $(document).ready(function(){
     })
 
     var swiper = new Swiper(".bannerSwiper", {
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
         spaceBetween: 30,
         effect: "fade",
         pagination: {
